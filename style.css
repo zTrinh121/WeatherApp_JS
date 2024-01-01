@@ -15,10 +15,34 @@ body{
 
 #weather{
     width: 350px;
-    height: 80vh;
+    height: 85vh;
     border-radius: 30px;
     padding: 30px 20px;
     background: url(./images/warm.jpg) no-repeat center/cover;
+}
+
+.hot{
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url(./images/hot.jpg) no-repeat center/cover ;
+}
+
+.hot #weather{
+    background: url(./images/hot.jpg) no-repeat center/cover;
+}
+
+.warm{
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url(./images/warm.jpg) no-repeat center/cover ;
+}
+
+.warm #weather{
+    background: url(./images/warm.jpg) no-repeat center/cover;
+}
+
+.cool{
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url(./images/cool.jpg) no-repeat center/cover ;
+}
+
+.cool #weather{
+    background: url(./images/cool.jpg) no-repeat center/cover;
 }
 
 .search{
@@ -41,6 +65,7 @@ body{
     text-align: center;
     color: #fff;
     margin: 20px 0;
+    transition: 0.4s;
 }
 
 .capital{
@@ -83,4 +108,9 @@ body{
 
 .more-desc div i{
     margin: 5px 0;
+}
+
+.hide{
+    visibility: hidden;
+    opacity: 0;
 }
